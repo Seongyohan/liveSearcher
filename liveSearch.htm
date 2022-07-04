@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans&display=swap" rel="stylesheet">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+       .inner1 {
+			background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/fe33199f-fb4e-41ef-957b-8549ff58c459/dcrimia-35425791-862c-4756-bac0-bf831e3c3690.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ZlMzMxOTlmLWZiNGUtNDFlZi05NTdiLTg1NDlmZjU4YzQ1OVwvZGNyaW1pYS0zNTQyNTc5MS04NjJjLTQ3NTYtYmFjMC1iZjgzMWUzYzM2OTAuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.OGo3YLpZOSXSuUe8I1oXj_aldIM6wNnME2W0qYoe028');
+			background-repeat:  no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100vw;
+	        max-width: 100%;
+	        height: 100vh;
+	        max-height: 100%;
+			margin:0;
+			padding:0;
+			position: relative;
+			z-index: 5;
+      font-family: Rubik;
+
+
+		}
+		.box2 {
+			background-color: transparent;
+			color: black;
+			width:90vw;
+			height: 80vh;
+			margin: 10vh auto;
+			position: absolute;
+			inset:0;
+      z-index: 3;
+		}
+		.box2::before {
+           content:'';
+           display: block;
+		   width:90vw;
+		   height: 80vh;
+		   border-radius: 40px;
+		   box-shadow:  6px 5px 30px  black;
+		   backdrop-filter: blur(5px);
+		   opacity: 1;
+		   position: absolute;
+		   inset:0;
+		   z-index: -1;
+
+			
+			
+		}
+		.input-group {
+		margin-bottom: -45px;
+    caret-color:lightpink;
+		}
+       .input-group .btn {
+        color:lightpink !important;
+        box-sizing: border-box;
+        border: 5px solid lightpink;
+        bottom: 0;
+       }
+       .input-group .btn:hover {
+        background-color: transparent;
+        transform: scale(1.1);
+       }
+
+
+
+
+
+        .result_box > * {
+        	scroll-snap-align:center;
+        }
+		.result_box {
+			background-color:transparent;
+			display: grid;
+			width: 100%;
+			height: 105%;
+			grid-auto-flow: column;
+			grid-template-columns: 288px;
+			grid-template-rows: min-content;
+			align-content: center;
+			justify-content: start;
+			scroll-snap-type:inline mandatory;
+			grid-gap: 10px;
+			border-radius: 40px;
+			overflow: auto;
+      position: relative;
+      z-index: -1;
+		}
+        .result_box img {
+        	min-height: 180px;
+          max-height: 180px;
+          object-fit: fill;
+          
+
+        }
+        
+        .result_box::-webkit-scrollbar {
+            height: 15px;
+            overflow: visible;
+            transform: translateY(40px);
+        }
+
+        .result_box::-webkit-scrollbar-thumb {
+            background-color: lightpink;
+            border-radius: 12px;
+        }
+        .result_box::-webkit-scrollbar-track {
+       	    box-shadow:  6px 5px 30px  black;
+       	    backdrop-filter :blur(5px);
+       	    border-radius: 12px;
+       }
+       .card {
+        border:none;
+       }
+       .card-body {
+        border: 5px solid lightpink;
+        border-radius: 12px;
+        background-color:white;
+
+       }
+       .card-body .btn {
+        position: absolute;
+        bottom: 0;
+        background-color: lightpink !important;
+        border: none;
+       }
+       .modal1 .modal-body {
+        display: grid;
+        grid-template-columns: 100% 100%;
+        grid-template-rows: 100%;
+        height: 500px;
+        justify-items:center;
+        align-items: : stretch;
+        scroll-snap-type:inline mandatory;
+        grid-column-gap: 15px;
+       }
+       .modal-body iframe {
+        height: 100%;
+        width: 100%;
+       }
+       .modal-body aside {
+        overflow-y: auto;
+       }
+       .modal-body * {
+        scroll-snap-align:center;
+       }
+/*       .modal-body aside {
+        min-width: 
+       }*/
+
+
+			
+		
+
+		
+		
+
+	</style>
+</head>
+<body class="inner1">
+<div class="modal modal1" id="exampleModal"  aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<section class="box2">
+<div class="input-group w-100">
+  <input type="text" class="form-control" placeholder="anime title" aria-label="Recipient's username" aria-describedby="button-addon2" value='made in abyss'>
+  <button class="btn btn-outline-secondary" type="button" id="button-addon2" style="border-radius: 0 40px 0 0; ">Search</button>
+</div>
+<div class="result_box">
+</section>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="test1java.js"></script>
+</html>
+
+
+
+
