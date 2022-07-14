@@ -34,7 +34,7 @@ function ajax(confirm) {
     
   },
   error: function(mi){
-        let emote = ['<i class="fa-solid fa-face-grin-beam-sweat" style="font-size:12vw;margin-left:20vw;color:lightpink;"><p>empty</p></i>',]
+        let emote = ['<i class="fa-solid fa-face-grin-beam-sweat" style="font-size:12vw;margin-left:20vw;color:#c37358;"><p>empty</p></i>',]
         if(mi.status == 404){
           document.querySelector('.result_box').innerHTML = emote[0]
         }
