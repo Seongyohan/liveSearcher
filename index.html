@@ -9,9 +9,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="frenzen halim">
+
 	<style type="text/css">
        .inner1 {
-			background: url('https://thumbs.gfycat.com/AdoredGlumBanteng-size_restricted.gif');
+			background: url('https://1.bp.blogspot.com/-eknvIA55QRk/YIWm3yiwKfI/AAAAAAAAICU/y4N2JapoAisC3QmwcVmb5Sj7UgG_BRfowCNcBGAsYHQ/s2048/backgrounds%2Baesthetic%2Bwallpaper%2Bhd%2Bpc%2B%25283%2529.png');
 			background-repeat:  no-repeat;
 			background-size: cover;
 			background-position: center;
@@ -53,37 +55,51 @@
 			
 			
 		}
+    span {
+      color: #f5646b;
+    }
 		.input-group {
 		margin-bottom: -45px;
-    caret-color:lightpink;
+    caret-color:#f5646b;
+
 		}
        .input-group .form-control:focus {
-	border-color:white; 
+	border-color:black; 
 	box-shadow:none;
+  background-color: black !important;
 		
 		
 		
 		}
+.input-group .form-control:not(focus) {
+border-color:black; 
+  box-shadow:none;
+  background-color: black !important;
+  color: #f5646b;
+}
+
+
+
         .input-group .form-control:active {
-	border-color:white; 
+	border-color:black !important; 
 	box-shadow:none;
 		
 		
 		
 		}
        .form-control:focus .btn {
-	       border-color:white;
+	       border-color:black;
 		}
 	
        .input-group .btn {
-        color:#c37358 !important;
-	border:5px solid white;
+        color:#f5646b !important;
+	      border:5px solid black;
         box-sizing: border-box;
-	background-color:white;
+	      background-color:black;
 	appearance:none;
        }
        .input-group .btn:focus {
-	border:5px solid white;
+	border:5px solid black;
 	box-shadow:none;
 		}
        .input-group .btn:active {
@@ -130,7 +146,7 @@
         }
 
         .result_box::-webkit-scrollbar-thumb {
-            background-color: white;
+            background-color: black;
             border-radius: 12px;
         }
         .result_box::-webkit-scrollbar-track {
@@ -142,18 +158,26 @@
         border:none;
        }
        .card-body {
-        border-bottom: 5px solid #c37358;
+        border-bottom: 5px solid #f5646b;
 	       
         border-radius: 12px;
-        background-color:white;
+        background-color:black;
+        color: white;
 
        }
        .card-body .btn {
         position: absolute;
         bottom: 0;
-        background-color: #c37358 !important;
+        background-color: #f5646b !important;
         border: none;
        }
+       .card-body .btn:focus {
+        box-shadow: none;
+       }
+       .card-body .btn:active {
+        filter: brightness(0.7);
+       }
+
        .modal1 .modal-body {
         display: grid;
         grid-template-columns: 100% 100%;
@@ -163,6 +187,11 @@
         align-items: : stretch;
         scroll-snap-type:inline mandatory;
         grid-column-gap: 15px;
+        background-color: black;
+        color: white;
+       }
+       .modal-header,.modal-footer,.modal-content {
+        background-color: black;
        }
        .modal-body iframe {
         height: 100%;
@@ -174,6 +203,7 @@
        .modal-body * {
         scroll-snap-align:center;
        }
+       
 /*       .modal-body aside {
         min-width: 
        }*/
